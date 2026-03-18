@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://btk44rq06uuqr"]
+
+[ext_resource type="Texture2D" uid="uid://bugygehm3hxvc" path="res://assets/bg.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://tuc1bb3syr7h" path="res://assets/body.png" id="2_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://jflc372brua1" path="res://assets/short afro.png" id="3_d2bti"]
+[ext_resource type="Texture2D" uid="uid://dbcwaf8h32ffs" path="res://assets/braids.png" id="4_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://d4lmye676dori" path="res://assets/afro.png" id="5_flf07"]
+[ext_resource type="Texture2D" uid="uid://cipgcco70f882" path="res://assets/pikmin pants.png" id="6_k73cj"]
+[ext_resource type="Texture2D" uid="uid://bqba11egqtt85" path="res://assets/delta pants.png" id="7_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://cmmmixy4fcvbe" path="res://assets/omori pants.png" id="8_fs4d3"]
+[ext_resource type="Texture2D" uid="uid://610ecvy3jmu1" path="res://assets/omori skirt.png" id="9_7vxoj"]
+[ext_resource type="Texture2D" uid="uid://bril7oi2yc1mh" path="res://assets/pikmin shirt.png" id="10_ei405"]
+[ext_resource type="Texture2D" uid="uid://dlh6fyp7g6kc5" path="res://assets/delta shirt.png" id="11_e8dv2"]
+[ext_resource type="Texture2D" uid="uid://c4yqiokybdour" path="res://assets/omori shirt.png" id="12_2nhjh"]
+[ext_resource type="Texture2D" uid="uid://bi8q4ywcpv4wm" path="res://assets/eyes.png" id="13_bjha6"]
+[ext_resource type="Texture2D" uid="uid://cdhojejg4y0o8" path="res://assets/eyes lashes.png" id="14_gt76g"]
+[ext_resource type="Texture2D" uid="uid://c8biuuts7nbhn" path="res://assets/right arrow.png" id="15_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://d1nxr038rdegw" path="res://assets/legt arrow.png" id="16_flf07"]
+
+[node name="Node2D" type="Node2D" unique_id=1230721707]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1140193196]
+position = Vector2(577, 324)
+texture = ExtResource("1_wtcfe")
+
+[node name="body" type="Sprite2D" parent="background" unique_id=1306142080]
+texture = ExtResource("2_nr8wp")
+
+[node name="hair" type="Sprite2D" parent="background" unique_id=2132482757]
+position = Vector2(1, 0)
+
+[node name="short afro" type="Sprite2D" parent="background/hair" unique_id=917908467]
+position = Vector2(1, 0)
+texture = ExtResource("3_d2bti")
+
+[node name="braids" type="Sprite2D" parent="background/hair" unique_id=2069872484]
+position = Vector2(-1, 0)
+texture = ExtResource("4_ta5nu")
+
+[node name="afro" type="Sprite2D" parent="background/hair" unique_id=2086354978]
+texture = ExtResource("5_flf07")
+
+[node name="bottoms" type="Sprite2D" parent="background" unique_id=643294251]
+
+[node name="pikminpants" type="Sprite2D" parent="background/bottoms" unique_id=643047485]
+texture = ExtResource("6_k73cj")
+
+[node name="deltapants" type="Sprite2D" parent="background/bottoms" unique_id=291475782]
+texture = ExtResource("7_rjqkl")
+
+[node name="omoripants" type="Sprite2D" parent="background/bottoms" unique_id=358706373]
+texture = ExtResource("8_fs4d3")
+
+[node name="omoriskirt" type="Sprite2D" parent="background/bottoms" unique_id=1968070014]
+texture = ExtResource("9_7vxoj")
+
+[node name="tops" type="Sprite2D" parent="background" unique_id=759857235]
+
+[node name="pikminshirt" type="Sprite2D" parent="background/tops" unique_id=848171749]
+texture = ExtResource("10_ei405")
+
+[node name="deltashirt" type="Sprite2D" parent="background/tops" unique_id=2065681661]
+texture = ExtResource("11_e8dv2")
+
+[node name="omorishirt" type="Sprite2D" parent="background/tops" unique_id=1923732977]
+texture = ExtResource("12_2nhjh")
+
+[node name="eyes" type="Sprite2D" parent="background" unique_id=1925851057]
+position = Vector2(9, 37)
+texture = ExtResource("13_bjha6")
+
+[node name="eyes (lashes)" type="Sprite2D" parent="background/eyes" unique_id=941391762]
+visible = false
+position = Vector2(1, 0)
+texture = ExtResource("14_gt76g")
+
+[node name="right arrow tops" type="Button" parent="." unique_id=324983306]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("15_ta5nu")
+flat = true
+
+[node name="left arrow tops" type="Button" parent="." unique_id=1963418933]
+offset_left = -28.0
+offset_right = 1132.0
+offset_bottom = 656.0
+icon = ExtResource("16_flf07")
+flat = true
+
+[node name="right arrow hair" type="Button" parent="." unique_id=1763721560]
+offset_top = -129.0
+offset_right = 1160.0
+offset_bottom = 527.0
+icon = ExtResource("15_ta5nu")
+flat = true
+
+[node name="left arrow hair" type="Button" parent="." unique_id=2001625613]
+offset_left = -34.0
+offset_top = -134.0
+offset_right = 1126.0
+offset_bottom = 522.0
+icon = ExtResource("16_flf07")
+flat = true
+
+[node name="right arrow bottoms" type="Button" parent="." unique_id=601087900]
+offset_top = 149.0
+offset_right = 1160.0
+offset_bottom = 805.0
+icon = ExtResource("15_ta5nu")
+flat = true
+
+[node name="left arrow bottoms" type="Button" parent="." unique_id=553916182]
+offset_left = -30.0
+offset_top = 153.0
+offset_right = 1130.0
+offset_bottom = 809.0
+icon = ExtResource("16_flf07")
+flat = true
