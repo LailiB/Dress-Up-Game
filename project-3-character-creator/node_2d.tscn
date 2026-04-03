@@ -16,6 +16,12 @@
 [ext_resource type="Texture2D" uid="uid://cdhojejg4y0o8" path="res://assets/eyes lashes.png" id="14_gt76g"]
 [ext_resource type="Texture2D" uid="uid://c8biuuts7nbhn" path="res://assets/right arrow.png" id="15_ta5nu"]
 [ext_resource type="Texture2D" uid="uid://d1nxr038rdegw" path="res://assets/legt arrow.png" id="16_flf07"]
+[ext_resource type="Script" uid="uid://g2m8x6aapcom" path="res://right_arrow_tops.gd" id="16_k73cj"]
+[ext_resource type="Script" uid="uid://tvju0inlucg7" path="res://left_arrow_tops.gd" id="18_ei405"]
+[ext_resource type="Script" uid="uid://co7mjd0ytkllq" path="res://right_arrow_hair.gd" id="19_e8dv2"]
+[ext_resource type="Script" uid="uid://c5axkc4awqhan" path="res://left_arrow_hair.gd" id="20_2nhjh"]
+[ext_resource type="Script" uid="uid://dwsymb1lcuq1g" path="res://right_arrow_bottoms.gd" id="21_bjha6"]
+[ext_resource type="Script" uid="uid://gd5ms7ag07yc" path="res://left_arrow_bottoms.gd" id="22_gt76g"]
 
 [node name="Node2D" type="Node2D" unique_id=1230721707]
 
@@ -79,6 +85,7 @@ offset_right = 8.0
 offset_bottom = 8.0
 icon = ExtResource("15_ta5nu")
 flat = true
+script = ExtResource("16_k73cj")
 
 [node name="left arrow tops" type="Button" parent="." unique_id=1963418933]
 offset_left = -28.0
@@ -86,6 +93,7 @@ offset_right = 1132.0
 offset_bottom = 656.0
 icon = ExtResource("16_flf07")
 flat = true
+script = ExtResource("18_ei405")
 
 [node name="right arrow hair" type="Button" parent="." unique_id=1763721560]
 offset_top = -129.0
@@ -93,6 +101,7 @@ offset_right = 1160.0
 offset_bottom = 527.0
 icon = ExtResource("15_ta5nu")
 flat = true
+script = ExtResource("19_e8dv2")
 
 [node name="left arrow hair" type="Button" parent="." unique_id=2001625613]
 offset_left = -34.0
@@ -101,6 +110,7 @@ offset_right = 1126.0
 offset_bottom = 522.0
 icon = ExtResource("16_flf07")
 flat = true
+script = ExtResource("20_2nhjh")
 
 [node name="right arrow bottoms" type="Button" parent="." unique_id=601087900]
 offset_top = 149.0
@@ -108,6 +118,7 @@ offset_right = 1160.0
 offset_bottom = 805.0
 icon = ExtResource("15_ta5nu")
 flat = true
+script = ExtResource("21_bjha6")
 
 [node name="left arrow bottoms" type="Button" parent="." unique_id=553916182]
 offset_left = -30.0
@@ -116,3 +127,4 @@ offset_right = 1130.0
 offset_bottom = 809.0
 icon = ExtResource("16_flf07")
 flat = true
+script = ExtResource("22_gt76g")
