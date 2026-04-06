@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://btk44rq06uuqr"]
 
+[ext_resource type="Script" uid="uid://bwickp8u1svjk" path="res://saving.gd" id="1_2nhjh"]
 [ext_resource type="Texture2D" uid="uid://bugygehm3hxvc" path="res://assets/bg.png" id="1_wtcfe"]
-[ext_resource type="Texture2D" uid="uid://tuc1bb3syr7h" path="res://assets/body.png" id="2_nr8wp"]
-[ext_resource type="Texture2D" uid="uid://jflc372brua1" path="res://assets/short afro.png" id="3_d2bti"]
-[ext_resource type="Texture2D" uid="uid://dbcwaf8h32ffs" path="res://assets/braids.png" id="4_ta5nu"]
-[ext_resource type="Texture2D" uid="uid://d4lmye676dori" path="res://assets/afro.png" id="5_flf07"]
+[ext_resource type="Texture2D" uid="uid://c4hj3kpl4sm25" path="res://assets/body - Copy.png" id="3_bjha6"]
+[ext_resource type="Texture2D" uid="uid://bc337y3xaawqm" path="res://assets/short afro - Copy.png" id="4_gt76g"]
+[ext_resource type="Texture2D" uid="uid://d4e0iwch0jpil" path="res://assets/braids - Copy.png" id="5_1fr6y"]
+[ext_resource type="Texture2D" uid="uid://d1r474a2t03ty" path="res://assets/afro - Copy.png" id="6_2hxjc"]
 [ext_resource type="Texture2D" uid="uid://cipgcco70f882" path="res://assets/pikmin pants.png" id="6_k73cj"]
 [ext_resource type="Texture2D" uid="uid://bqba11egqtt85" path="res://assets/delta pants.png" id="7_rjqkl"]
 [ext_resource type="Texture2D" uid="uid://cmmmixy4fcvbe" path="res://assets/omori pants.png" id="8_fs4d3"]
@@ -14,61 +15,80 @@
 [ext_resource type="Texture2D" uid="uid://c4yqiokybdour" path="res://assets/omori shirt.png" id="12_2nhjh"]
 [ext_resource type="Texture2D" uid="uid://bi8q4ywcpv4wm" path="res://assets/eyes.png" id="13_bjha6"]
 [ext_resource type="Texture2D" uid="uid://cdhojejg4y0o8" path="res://assets/eyes lashes.png" id="14_gt76g"]
-[ext_resource type="Texture2D" uid="uid://c8biuuts7nbhn" path="res://assets/right arrow.png" id="15_ta5nu"]
-[ext_resource type="Texture2D" uid="uid://d1nxr038rdegw" path="res://assets/legt arrow.png" id="16_flf07"]
+[ext_resource type="Script" uid="uid://e1nawvv51p5c" path="res://color_picker.gd" id="16_bjha6"]
 [ext_resource type="Script" uid="uid://g2m8x6aapcom" path="res://right_arrow_tops.gd" id="16_k73cj"]
+[ext_resource type="Script" uid="uid://yhjjjgapb1db" path="res://color_picker_2.gd" id="17_gt76g"]
+[ext_resource type="Texture2D" uid="uid://bh0qoxcotbhsp" path="res://assets/right_arrow.png" id="18_bjha6"]
 [ext_resource type="Script" uid="uid://tvju0inlucg7" path="res://left_arrow_tops.gd" id="18_ei405"]
 [ext_resource type="Script" uid="uid://co7mjd0ytkllq" path="res://right_arrow_hair.gd" id="19_e8dv2"]
 [ext_resource type="Script" uid="uid://c5axkc4awqhan" path="res://left_arrow_hair.gd" id="20_2nhjh"]
+[ext_resource type="Texture2D" uid="uid://dtn1gehdpe0sg" path="res://assets/legt_arrow.png" id="20_gt76g"]
 [ext_resource type="Script" uid="uid://dwsymb1lcuq1g" path="res://right_arrow_bottoms.gd" id="21_bjha6"]
 [ext_resource type="Script" uid="uid://gd5ms7ag07yc" path="res://left_arrow_bottoms.gd" id="22_gt76g"]
 
 [node name="Node2D" type="Node2D" unique_id=1230721707]
+script = ExtResource("1_2nhjh")
 
 [node name="background" type="Sprite2D" parent="." unique_id=1140193196]
 position = Vector2(577, 324)
 texture = ExtResource("1_wtcfe")
 
 [node name="body" type="Sprite2D" parent="background" unique_id=1306142080]
-texture = ExtResource("2_nr8wp")
+position = Vector2(-8.000003, -27.99999)
+scale = Vector2(0.45181254, 0.44783336)
+texture = ExtResource("3_bjha6")
 
 [node name="hair" type="Sprite2D" parent="background" unique_id=2132482757]
 position = Vector2(1, 0)
 
 [node name="short afro" type="Sprite2D" parent="background/hair" unique_id=917908467]
-position = Vector2(1, 0)
-texture = ExtResource("3_d2bti")
+visible = false
+position = Vector2(-8.9999695, -19.999977)
+scale = Vector2(0.44200003, 0.45533332)
+texture = ExtResource("4_gt76g")
 
 [node name="braids" type="Sprite2D" parent="background/hair" unique_id=2069872484]
-position = Vector2(-1, 0)
-texture = ExtResource("4_ta5nu")
+visible = false
+position = Vector2(-9.0000305, -25.999989)
+scale = Vector2(0.43733335, 0.45450002)
+texture = ExtResource("5_1fr6y")
 
 [node name="afro" type="Sprite2D" parent="background/hair" unique_id=2086354978]
-texture = ExtResource("5_flf07")
+visible = false
+position = Vector2(-8.999998, -30)
+scale = Vector2(0.4423333, 0.442)
+texture = ExtResource("6_2hxjc")
 
 [node name="bottoms" type="Sprite2D" parent="background" unique_id=643294251]
 
 [node name="pikminpants" type="Sprite2D" parent="background/bottoms" unique_id=643047485]
+visible = false
 texture = ExtResource("6_k73cj")
 
 [node name="deltapants" type="Sprite2D" parent="background/bottoms" unique_id=291475782]
+visible = false
 texture = ExtResource("7_rjqkl")
 
 [node name="omoripants" type="Sprite2D" parent="background/bottoms" unique_id=358706373]
+visible = false
 texture = ExtResource("8_fs4d3")
 
 [node name="omoriskirt" type="Sprite2D" parent="background/bottoms" unique_id=1968070014]
+visible = false
 texture = ExtResource("9_7vxoj")
 
 [node name="tops" type="Sprite2D" parent="background" unique_id=759857235]
 
 [node name="pikminshirt" type="Sprite2D" parent="background/tops" unique_id=848171749]
+visible = false
 texture = ExtResource("10_ei405")
 
 [node name="deltashirt" type="Sprite2D" parent="background/tops" unique_id=2065681661]
+visible = false
 texture = ExtResource("11_e8dv2")
 
 [node name="omorishirt" type="Sprite2D" parent="background/tops" unique_id=1923732977]
+visible = false
 texture = ExtResource("12_2nhjh")
 
 [node name="eyes" type="Sprite2D" parent="background" unique_id=1925851057]
@@ -80,51 +100,84 @@ visible = false
 position = Vector2(1, 0)
 texture = ExtResource("14_gt76g")
 
+[node name="ColorPicker" type="ColorPicker" parent="background" unique_id=353497756]
+offset_left = -560.0
+offset_top = -305.0
+offset_right = -262.0
+offset_bottom = 302.0
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+script = ExtResource("16_bjha6")
+
+[node name="ColorPicker2" type="ColorPicker" parent="background" unique_id=1165663332]
+offset_left = -556.0
+offset_top = -12.0
+offset_right = -258.0
+offset_bottom = 595.0
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+script = ExtResource("17_gt76g")
+
 [node name="right arrow tops" type="Button" parent="." unique_id=324983306]
-offset_right = 8.0
-offset_bottom = 8.0
-icon = ExtResource("15_ta5nu")
+offset_left = 744.0
+offset_top = 184.0
+offset_right = 880.0
+offset_bottom = 320.0
+icon = ExtResource("18_bjha6")
 flat = true
 script = ExtResource("16_k73cj")
 
 [node name="left arrow tops" type="Button" parent="." unique_id=1963418933]
-offset_left = -28.0
-offset_right = 1132.0
-offset_bottom = 656.0
-icon = ExtResource("16_flf07")
+offset_left = 326.0
+offset_top = 194.0
+offset_right = 449.0
+offset_bottom = 317.0
+icon = ExtResource("20_gt76g")
 flat = true
 script = ExtResource("18_ei405")
 
 [node name="right arrow hair" type="Button" parent="." unique_id=1763721560]
-offset_top = -129.0
-offset_right = 1160.0
-offset_bottom = 527.0
-icon = ExtResource("15_ta5nu")
+offset_left = 678.0
+offset_top = 59.0
+offset_right = 801.0
+offset_bottom = 182.0
+scale = Vector2(0.92, 1)
+icon = ExtResource("18_bjha6")
 flat = true
 script = ExtResource("19_e8dv2")
 
 [node name="left arrow hair" type="Button" parent="." unique_id=2001625613]
-offset_left = -34.0
-offset_top = -134.0
-offset_right = 1126.0
-offset_bottom = 522.0
-icon = ExtResource("16_flf07")
+offset_left = 316.0
+offset_top = 53.0
+offset_right = 439.0
+offset_bottom = 176.0
+icon = ExtResource("20_gt76g")
 flat = true
 script = ExtResource("20_2nhjh")
 
 [node name="right arrow bottoms" type="Button" parent="." unique_id=601087900]
-offset_top = 149.0
-offset_right = 1160.0
-offset_bottom = 805.0
-icon = ExtResource("15_ta5nu")
+offset_left = 688.0
+offset_top = 344.0
+offset_right = 811.0
+offset_bottom = 467.0
+icon = ExtResource("18_bjha6")
 flat = true
 script = ExtResource("21_bjha6")
 
 [node name="left arrow bottoms" type="Button" parent="." unique_id=553916182]
-offset_left = -30.0
-offset_top = 153.0
-offset_right = 1130.0
-offset_bottom = 809.0
-icon = ExtResource("16_flf07")
+offset_left = 342.0
+offset_top = 346.0
+offset_right = 465.0
+offset_bottom = 469.0
+icon = ExtResource("20_gt76g")
 flat = true
 script = ExtResource("22_gt76g")
+
+[connection signal="pressed" from="right arrow tops" to="right arrow tops" method="_on_pressed"]
+[connection signal="pressed" from="left arrow tops" to="left arrow tops" method="_on_pressed"]
+[connection signal="pressed" from="right arrow hair" to="right arrow hair" method="_on_pressed"]
+[connection signal="pressed" from="right arrow bottoms" to="right arrow bottoms" method="_on_pressed"]

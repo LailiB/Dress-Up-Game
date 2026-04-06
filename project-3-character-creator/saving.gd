@@ -1,8 +1,8 @@
-extends Button
+extends Node2D
+var currenthair = "0"
+var currenttops = "0"
+var currentbottoms = "0"
 
-@export var myhair = [$"../background/hair/short afro", $"../background/hair/braids", $"../background/hair/afro"]
-var cosmetic_on 
-var tracking = 0 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
