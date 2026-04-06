@@ -6,7 +6,7 @@ var tracking = 2
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mytops = [$"../background/tops/pikminshirt", $"../background/tops/deltashirt", $"../background/tops/omorishirt"]
-	cosmetic_on = mytops[tracking]
+	cosmetic_on = mytops[0]
 	cosmetic_on.visible = true 
 	pass # Replace with function body.
 
@@ -19,8 +19,7 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	cosmetic_on.visible = false
 	tracking = tracking - 1
-	#left arrows go in the negatives, ask how to fix
-	if tracking == mytops.size():
+	if tracking == -1:
 		tracking = 2
 	cosmetic_on = mytops[tracking]
 	cosmetic_on.visible = true 

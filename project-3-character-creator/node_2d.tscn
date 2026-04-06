@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://dtn1gehdpe0sg" path="res://assets/legt_arrow.png" id="20_gt76g"]
 [ext_resource type="Script" uid="uid://dwsymb1lcuq1g" path="res://right_arrow_bottoms.gd" id="21_bjha6"]
 [ext_resource type="Script" uid="uid://gd5ms7ag07yc" path="res://left_arrow_bottoms.gd" id="22_gt76g"]
+[ext_resource type="Script" uid="uid://dmslneh0v1hfo" path="res://line_edit.gd" id="26_gt76g"]
 
 [node name="Node2D" type="Node2D" unique_id=1230721707]
 script = ExtResource("1_2nhjh")
@@ -123,9 +124,9 @@ presets_visible = false
 script = ExtResource("17_gt76g")
 
 [node name="right arrow tops" type="Button" parent="." unique_id=324983306]
-offset_left = 744.0
+offset_left = 722.0
 offset_top = 184.0
-offset_right = 880.0
+offset_right = 858.0
 offset_bottom = 320.0
 icon = ExtResource("18_bjha6")
 flat = true
@@ -141,20 +142,20 @@ flat = true
 script = ExtResource("18_ei405")
 
 [node name="right arrow hair" type="Button" parent="." unique_id=1763721560]
-offset_left = 678.0
-offset_top = 59.0
-offset_right = 801.0
-offset_bottom = 182.0
+offset_left = 653.0
+offset_top = 51.0
+offset_right = 776.0
+offset_bottom = 174.0
 scale = Vector2(0.92, 1)
 icon = ExtResource("18_bjha6")
 flat = true
 script = ExtResource("19_e8dv2")
 
 [node name="left arrow hair" type="Button" parent="." unique_id=2001625613]
-offset_left = 316.0
-offset_top = 53.0
-offset_right = 439.0
-offset_bottom = 176.0
+offset_left = 343.0
+offset_top = 51.0
+offset_right = 466.0
+offset_bottom = 174.0
 icon = ExtResource("20_gt76g")
 flat = true
 script = ExtResource("20_2nhjh")
@@ -177,7 +178,18 @@ icon = ExtResource("20_gt76g")
 flat = true
 script = ExtResource("22_gt76g")
 
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1733538344]
+offset_left = 948.99994
+offset_top = 36.0
+offset_right = 1027.8544
+offset_bottom = 67.0
+scale = Vector2(1.8895593, 1.5528166)
+script = ExtResource("26_gt76g")
+
 [connection signal="pressed" from="right arrow tops" to="right arrow tops" method="_on_pressed"]
 [connection signal="pressed" from="left arrow tops" to="left arrow tops" method="_on_pressed"]
 [connection signal="pressed" from="right arrow hair" to="right arrow hair" method="_on_pressed"]
+[connection signal="pressed" from="left arrow hair" to="left arrow hair" method="_on_pressed"]
 [connection signal="pressed" from="right arrow bottoms" to="right arrow bottoms" method="_on_pressed"]
+[connection signal="pressed" from="left arrow bottoms" to="left arrow bottoms" method="_on_pressed"]
+[connection signal="text_submitted" from="LineEdit" to="LineEdit" method="_on_text_submitted"]
