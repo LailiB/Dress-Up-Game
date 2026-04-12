@@ -26,4 +26,5 @@ func _on_pressed() -> void:
 	cosmetic_on.visible = true 
 	Saving.currenttops = tracking
 	print (Saving.currenttops)
+	$"../AudioStreamPlayer2D".play()
 	pass # Replace with function body.

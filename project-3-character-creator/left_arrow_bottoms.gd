@@ -23,4 +23,5 @@ func _on_pressed() -> void:
 		tracking = 2
 	cosmetic_on = mybottoms[tracking]
 	cosmetic_on.visible = true 
+	$"../AudioStreamPlayer2D".play()
 	pass # Replace with function body.
