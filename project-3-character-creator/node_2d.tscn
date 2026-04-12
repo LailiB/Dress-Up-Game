@@ -196,6 +196,7 @@ stream = ExtResource("27_2hxjc")
 position = Vector2(1444, 368)
 stream = ExtResource("28_ebxd8")
 autoplay = true
+parameters/looping = false
 
 [connection signal="pressed" from="right arrow tops" to="right arrow tops" method="_on_pressed"]
 [connection signal="pressed" from="left arrow tops" to="left arrow tops" method="_on_pressed"]
